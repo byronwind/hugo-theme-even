@@ -19,7 +19,7 @@
   <span class="division">|</span>
   <span class="theme-info">
     {{ T "theme" }} - 
-    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+    <a class="theme-link" href="https://github.com/byronwind/hugo-theme-even">Even</a>
   </span>
 
   {{ if .Site.Params.busuanzi.enable -}}
@@ -43,10 +43,8 @@
     {{ if ne .Site.Params.since $current -}}
       {{ .Site.Params.since }} - 
     {{ end }}
-    {{- $current }}
-    <span class="heart">
-      <i class="iconfont icon-heart"></i>
-    </span>
+    {{- $current }} 
+    <span class="division">|</span>
     <span class="author">{{if .Site.Copyright }}{{ .Site.Copyright | safeHTML }}{{ else }}{{ .Site.Author.name | safeHTML }}{{ end }}</span>
   </span>
 </div>
